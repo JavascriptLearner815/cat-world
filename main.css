@@ -1,9 +1,22 @@
 	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-nav > ul {
+body {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+nav ul {
 	list-decoration: none;
 }
 
-nav > a {
+nav a {
 	margin-right: 15px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }

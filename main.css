@@ -20,3 +20,12 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+details.notifications {
+  list-style: none;
+}
+
+details.notifications::before {
+  margin-right: 2px;
+  content: "\1f514";
+}

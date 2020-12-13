@@ -67,3 +67,8 @@ details > div {
 details[open] > summary::after {
   content: "-";
 }
+
+.notifications {
+	text-align: right;
+	vertical-align: top;
+}

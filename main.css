@@ -49,18 +49,11 @@ details > summary::after {
   float: left;
   font-size: 1em;
   font-weight: bold;
+  content: "+";
   margin: -2px 10px 0 0;
   padding: 1px 0 3px 0;
   text-align: center;
   width: 30px;
-}
-
-details > summary::after:not('.notifications') {
-  content: "+";
-}
-
-details > summary::after.notifications {
-  content: "\1f514";
 }
 
 details > div {
@@ -71,10 +64,6 @@ details > div {
   box-shadow: 4px 4px 3px black;
 }
 
-details[open] > summary::after.not('.notifications') {
+details[open] > summary::after {
   content: "-";
-}
-
-details[open] > summary::after.notifications {
-  content: "\1f56d";
 }

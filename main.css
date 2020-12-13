@@ -21,27 +21,60 @@ a:hover {
 	text-decoration: underline;
 }
 
-details.notifications {
-  list-style: none;
+details {
+  width: 620px;
+  box-shadow: 3px 3px 4px black;
 }
 
-details.notifications::before {
-  margin-right: 2px;
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  font-size: 1.15em;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::after {
+  background: #da291c;
+  border-color: #da291c;
+  border-radius: 15px;
+  color: #fff;
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  margin: -2px 10px 0 0;
+  padding: 1px 0 3px 0;
+  text-align: center;
+  width: 30px;
+}
+
+details > summary::after:not(.notifications) {
+  content: "+";
+}
+
+details > summary::after.notifications {
   content: "\1f514";
 }
 
-header {
-	float: top;
+details > div {
+  border-radius: 0 0 10px 10px;
+  background: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 4px 4px 3px black;
 }
 
-main {
-  float: left;
+details[open] > summary::after.not(.notifications) {
+  content: "-";
 }
 
-aside {
-  float: right;
-}
-
-footer {
-  float: bottom;
+details[open] > summary::after.notifications {
+  content: "\1f56d";
 }

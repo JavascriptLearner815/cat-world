@@ -55,7 +55,7 @@ details > summary::after {
   width: 30px;
 }
 
-details > summary::after:not(.notifications) {
+details > summary::after:not('.notifications') {
   content: "+";
 }
 
@@ -71,7 +71,7 @@ details > div {
   box-shadow: 4px 4px 3px black;
 }
 
-details[open] > summary::after.not(.notifications) {
+details[open] > summary::after.not('.notifications') {
   content: "-";
 }
 

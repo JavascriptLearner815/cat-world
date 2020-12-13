@@ -29,3 +29,19 @@ details.notifications::before {
   margin-right: 2px;
   content: "\1f514";
 }
+
+header {
+	float: top;
+}
+
+main {
+  float: left;
+}
+
+aside {
+  float: right;
+}
+
+footer {
+  float: bottom;
+}
